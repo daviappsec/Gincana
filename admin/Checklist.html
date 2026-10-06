@@ -4,13 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHECKLIST</title>
+
+    <title>Checklist | Central da Gincana</title>
+
+    <link rel="stylesheet" href="../style/admin.css">
 </head>
 
 <body>
-    <section>
+
+    <header>
+        <div>
+            <img src="../imagens/logo/logoprincipal.png" alt="logo" width="50px">
+        </div>
+        <div>
+            <h1>Urso de Guerra</h1>
+        </div>
+
         <h1>Checklist da Gincana</h1>
-    </section>
+
+        <nav>
+           <ul>
+               
+               <li><a href="../index.html">Início</a></li>
+               <li><a href="arrecardacao.html">Arrecadação</a></li>
+               <li><button id="sair">Sair</button></li>
+           </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Adicionar tarefa</h2>
+
+            <form id="formularioChecklist">
+
+                <label for="tarefa">Tarefa:</label>
+
+                <input type="text" id="tarefa" placeholder="Digite a tarefa">
+
+                <button type="submit">Adicionar</button>
+
+            </form>
+        </section>
+
+
+        <section>
+
+            <h2>Tarefas</h2>
+
+            <ul id="listaTarefas">
+
+                <!-- As tarefas serão adicionadas aqui pelo JavaScript -->
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <script src="../script/checklist.js"></script>
+
 </body>
 
 </html>

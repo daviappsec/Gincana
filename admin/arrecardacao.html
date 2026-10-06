@@ -4,13 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARRECARDAÇÃO</title>
+    <title>ARRECADAÇÃO | Central da Gincana</title>
+    <link rel="stylesheet" href="../style/admin.css">
 </head>
 
 <body>
+
+    <header>
+        
+        <div>
+            <img src="../imagens/logo/logoprincipal.png" alt="logo" width="50px">
+        </div>
+        <div>
+            <h1>Urso de Guerra</h1>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><button id="sair">Sair</button></li>
+            </ul>
+        </nav>
+
+    </header>
     <section>
         <h1>Controle de Arrecadação</h1>
+
+        <form id="form2">
+
+            <label for="item">ITEM:</label>
+            <input type="text" id="item" placeholder=" Digite o item arrecadado">
+
+            <label for="quant">QUANTIDADE</label>
+            <input type="number" id="quant" placeholder=" Digite a quantidade">
+
+            <label for="data">DATA</label>
+            <input type="date" id="data">
+
+            <label for="resp">RESPONSÁVEL</label>
+            <input type="text" id="resp" placeholder="Digite seu nome" autocomplete="name">
+
+            <button type="submit">ADICIONAR</button>
+
+        </form>
     </section>
+
+    <section>
+
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantidade</th>
+                <th>Data</th>
+                <th>Responsável</th>
+            </tr>
+
+        </table>
+    </section>
+
+    <script src="../script/arrecardacao.js"></script>
 </body>
 
 </html>
