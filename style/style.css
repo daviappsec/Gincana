@@ -30,6 +30,11 @@ ul {
 body {
     background-color: var(--color-black);
     color: var(--color-branco);
+    background-image: url(/imagens/logo/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 430px;
+    background-attachment: fixed;
 }
 
 .header-inicio {
@@ -40,15 +45,14 @@ body {
 .titulo {
     display: flex;
     justify-content: space-between;
-    margin: 10px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
 }
 
 .img-titulo {
     cursor: pointer;
-    background-color: none;
     box-shadow: none;
-    margin: 10px 5px 0px 5px;
-
+    margin: 16px 0px 0px 15px;
+font-size: 3rem;
 }
 
 .h1 {
@@ -58,18 +62,11 @@ body {
     color: var(--color-dourado);
     background-color: none;
     box-shadow: none;
-    margin: 9px 5px 0px 5px;
+    margin: 19px 5px 0px 5px;
 }
-
-.h1:hover {
-    color: rgb(255, 174, 0);
-    cursor: pointer;
-}
-
 .nav-inicio {
     margin-top: 0px;
 }
-
 .nav-inicio ul {
     display: flex;
     flex-direction: row;
@@ -154,7 +151,7 @@ div:hover {
 .placar {
     margin: 2px;
     padding: 8px;
-    align-items: center;
+    margin: auto;
 }
 
 .placar h2 {
@@ -173,7 +170,7 @@ table {
     border-collapse: collapse;
     font-family: var(--font-txt);
     border: 1px solid var(--color-branco);
-    border-radius: 8px;
+   
 }
 
 th,
