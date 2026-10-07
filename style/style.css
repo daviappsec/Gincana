@@ -17,6 +17,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+
 }
 
 body {
@@ -27,42 +35,48 @@ body {
 .header-inicio {
     display: flex;
     flex-direction: column;
-    
 }
 
 .titulo {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
-    margin: 5px 5px 0px 5px;
+    margin: 10px 5px 0px 5px;
 }
 
 .img-titulo {
     cursor: pointer;
+    background-color: none;
+    box-shadow: none;
+    margin: 10px 5px 0px 5px;
+
 }
 
 .h1 {
     font-family: var(--font-titulo);
     font-weight: 200;
     font-size: 1.2rem;
-    color: var(--color-dourado)
+    color: var(--color-dourado);
+    background-color: none;
+    box-shadow: none;
+    margin: 9px 5px 0px 5px;
 }
 
 .h1:hover {
     color: rgb(255, 174, 0);
     cursor: pointer;
 }
+
 .nav-inicio {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
+
 .nav-inicio ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 15px;
     padding: 6px;
-    
+
 }
 
 
@@ -76,13 +90,181 @@ body {
 
 .li-inicio {
     justify-content: space-around;
-    background-color: rgb(48, 46, 55);
+    background-color: rgb(40, 40, 43);
     border-radius: 10px;
 }
 
 .nav-inicio a:hover {
-    text-decoration: underline;
     transition: 1.4s;
     color: var(--color-dourado);
-    
+
+}
+
+.main-inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+
+div h2,
+h3,
+.apresen {
+    font-family: var(--font-titulo);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div,
+.placar,
+.apresen {
+    margin: 10px 10px 20px 10px;
+    text-align: justify;
+    padding: 12px;
+    box-shadow: 1px 1px 14px rgba(255, 255, 255, 0.29);
+    border-radius: 10px;
+    font-family: var(--font-txt);
+}
+
+div:hover {
+    box-shadow: 1px 1px 20px rgba(255, 174, 0, 0.784);
+    transition: 1s;
+}
+
+.cor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.destaque {
+    box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.485);
+    width: 130px;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.destaque:hover {
+    box-shadow: 1px 1px 20px rgba(255, 174, 0, 0.784);
+    transition: 1s;
+}
+
+.placar {
+    margin: 2px;
+    padding: 8px;
+    align-items: center;
+}
+
+.placar h2 {
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+}
+
+.placar:hover {
+    box-shadow: 1px 1px 20px rgba(255, 174, 0, 0.784);
+    transition: 1s;
+}
+
+table {
+
+    margin: 5px 5px 5px 5px;
+    border-collapse: collapse;
+    font-family: var(--font-txt);
+    border: 1px solid var(--color-branco);
+    border-radius: 8px;
+}
+
+th,
+td {
+    padding: 3px;
+    text-align: center;
+}
+
+th {
+    font-family: var(--font-titulo);
+    font-size: 1rem;
+    border: 1px solid var(--color-branco);
+    padding: 3px;
+}
+
+td {
+    color: white;
+    font-size: 1rem;
+    border: 1px solid var(--color-branco);
+    padding: 3px;
+}
+
+hr {
+    width: 88%;
+    height: 2px;
+    border: none;
+
+    background: linear-gradient(to right,
+            transparent,
+            var(--color-branco),
+            transparent);
+
+    margin: 20px auto;
+}
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: var(--font-txt);
+}
+
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--font-txt);
+}
+
+footer a:hover {
+    color: rgba(255, 174, 0, 0.784);
+}
+
+.nav-inicio2 {
+    display: none;
+}
+
+.nav-inicio2.ativo {
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+
+    margin: 80px 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+.nav-inicio2.ativo a {
+    color: var(--color-branco);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-family: var(--font-titulo);
+}
+
+.nav-inicio2.ativo a:hover {
+
+    color: rgba(255, 174, 0, 0.784);
+    transition: 0.5s;
 }

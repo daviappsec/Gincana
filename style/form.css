@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PÁGINA */
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #050816;
+    font-family: var(--font-txt);
+}
+
+/* ÁREA PRINCIPAL */
+.main {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+/* TÍTULO */
+.item h1 {
+    text-align: center;
+
+    color: var(--color-dourado);
+    font-family: var(--font-titulo);
+    font-size: 32px;
+}
+
+/* FORMULÁRIO */
+.formulario {
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 35px;
+
+    background-color: white;
+
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* LABEL */
+.formulario label {
+    font-family: var(--font-txt);
+    font-weight: bold;
+    color: #222;
+}
+
+/* CAMPOS */
+.formulario input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-family: var(--font-txt);
+
+    outline: none;
+}
+
+/* CAMPO AO CLICAR */
+.formulario input:focus {
+    border-color: var(--color-dourado);
+}
+
+/* BOTÃO */
+.formulario button {
+    margin-top: 10px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--color-dourado);
+    color: #000;
+
+    font-family: var(--font-txt);
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(255, 175, 0, 0.4);
+}
