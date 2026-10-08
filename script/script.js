@@ -7,3 +7,4 @@ logo.addEventListener("click", function () {
 
     menu.classList.toggle("ativo")
 })
+
